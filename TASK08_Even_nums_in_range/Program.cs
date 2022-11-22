@@ -33,9 +33,8 @@ string text = Console.ReadLine() ?? "";
 int interval_num = CheckInput(text);
 int interval_start = 1;
 
-if (interval_num == 1) Console.WriteLine("No even nums in this range!");
-
 Console.Write($"Your list of EVEN nums in your range 1..{interval_num}: ");
+if (interval_num == 1) Console.WriteLine("No even nums in this range!");
 
 while (interval_start <= interval_num) {
     if (interval_start % 2 == 0) {
