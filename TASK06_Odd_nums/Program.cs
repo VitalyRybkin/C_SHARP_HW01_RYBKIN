@@ -33,7 +33,8 @@ static void StopExe (string text) {
     if (text == "Q") Environment.Exit(0); 
 }
 
-Console.Write("Enter your first number (or type 'Q'): ");
+//Checking if the num is EVEN
+Console.Write("Enter your number (or type 'Q'): ");
 string text = Console.ReadLine() ?? "";
 StopExe(text);
 int a = CheckInput(text);
