@@ -28,16 +28,18 @@ return number;
 }
 
 //Setting the range of nums
-Console.Write("Enter number to set your range of numbers: ");
+Console.Write("Enter number to set your range of numbers (or type 'Q'): ");
 string text = Console.ReadLine() ?? "";
 int interval_num = CheckInput(text);
 int interval_start = 1;
 
 if (interval_num == 1) Console.WriteLine("No even nums in this range!");
 
+Console.Write($"Your list of EVEN nums in your range 1..{interval_num}: ");
+
 while (interval_start <= interval_num) {
     if (interval_start % 2 == 0) {
-        Console.WriteLine(interval_start);
+        Console.Write(interval_start +" ");
     }
     interval_start ++;
 }
